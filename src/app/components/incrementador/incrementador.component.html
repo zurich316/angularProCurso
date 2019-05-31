@@ -1,0 +1,16 @@
+<div class="card-body">
+  <h5 class="card-title">{{leyenda}}</h5>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <button (click)="agregarValor(-5)" class="btn btn-outline-primary" type="button" id="button-addon1">
+        <i class="mdi mdi-minus"></i>
+      </button>
+    </div>
+    <input #txtProgresor (ngModelChange)="onChange($event)" name="progreso" [(ngModel)]="progreso" type="number" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+    <div class="input-group-prepend">
+      <button (click)="agregarValor(+5)" class="btn btn-outline-primary" type="button" id="button-addon1">
+          <i class="mdi mdi-plus"></i>
+      </button>
+    </div>
+  </div>
+</div>
