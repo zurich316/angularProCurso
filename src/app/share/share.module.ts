@@ -1,4 +1,7 @@
 import { NgModule } from '@angular/core';
+
+import { RouterModule } from '@angular/router';
+
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -19,7 +22,8 @@ import { Error404Component } from './error404/error404.component';
     BreadcrumbsComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class ShareModule { }

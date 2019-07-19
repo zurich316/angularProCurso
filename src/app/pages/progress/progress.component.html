@@ -2,9 +2,19 @@
   <div class="col-12">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Progreso</h5>
+        <h5 class="card-title">Progreso1 Azul</h5>
         <div class="progress">
-           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [attr.arialValuenow]="progreso" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [style.width]="progreso +'%'"></div>
+           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [attr.arialValuenow]="progreso1" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [style.width]="progreso1.toString() + '%'"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Progreso1 Verde</h5>
+        <div class="progress">
+           <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" [attr.arialValuenow]="progreso2" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [style.width]="progreso2.toString() + '%'"></div>
         </div>
       </div>
     </div>
@@ -15,14 +25,14 @@
   <div class="col-6">
     <div class="card">
       <div class="card-body">
-        <app-incrementador (cambiarValor)="progreso = $event"  leyenda="Progreso Azul"></app-incrementador>
+        <app-incrementador (cambiarValor)="progreso1 = $event"  leyenda="Progreso1 Azul"></app-incrementador>
       </div>
     </div>
   </div>
   <div class="col-6">
       <div class="card">
         <div class="card-body">
-          <app-incrementador  leyenda="Progreso Verde"></app-incrementador>
+          <app-incrementador (cambiarValor)="progreso2 = $event" leyenda="Progreso1 Verde"  ></app-incrementador>
         </div>
       </div>
     </div>

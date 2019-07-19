@@ -15,6 +15,9 @@ import { FormsModule } from '@angular/forms';
 
 //temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { AccontSettingComponent } from './accont-setting/accont-setting.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
     Grafica1Component,
     PagesComponent,
     IncrementadorComponent,
-    GraficaComponent
+    GraficaComponent,
+    AccontSettingComponent,
+    PromesasComponent,
+    RxjsComponent
   ],
   exports:[
     DashboardComponent,
@@ -31,7 +37,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
     Grafica1Component,
     PagesComponent,
     IncrementadorComponent,
-    GraficaComponent
+    GraficaComponent,
+    AccontSettingComponent
   ],
   imports: [
    

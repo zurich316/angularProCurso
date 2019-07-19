@@ -7,7 +7,7 @@ import { Error404Component } from './share/error404/error404.component';
 const routes: Routes = [
   
   {path:'login',component:LoginComponent},
-  {path:'registe',component:RegisterComponent}, 
+  {path:'register',component:RegisterComponent}, 
   {path:'**',component:Error404Component},
   
 ];
